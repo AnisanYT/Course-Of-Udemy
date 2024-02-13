@@ -1,0 +1,44 @@
+p{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+body{
+    background-color: #eee;
+}
+.redBox, .greenBox, .blueBox{
+    position: relative;
+    left: 4rem;
+    margin-top: .5rem;
+    background-color: #fff;
+    width: 10rem;
+    padding: .4rem;
+    border-radius: .1rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+    transition: .2s;
+}
+
+.redBox{
+    border-left: 1px solid red;
+}
+
+.redBox:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.greenBox{
+    border-left: 1px solid green;
+}
+
+.greenBox:hover{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+}
+
+.blueBox{
+    border-left: 1px solid blue;
+}
+
+.blueBox:hover{
+    background-color: rgb(0, 0, 255, .1);
+}

@@ -1,0 +1,93 @@
+body{
+    background-color: #eee;
+}
+h3{
+    text-align: center;
+}
+.fondo{
+    height: 400px;
+    background-image: url(https://placekitten.com/200/300);
+    background: green url(https://placekitten.com/200/300) no-repeat left top fixed;
+    background-size: cover;
+}
+
+
+.fondoColores_Afondo{
+    height: 300px;
+    background-color: hsl(255, 40%, 30%);
+    opacity: .4; 
+}
+
+.gradient{
+    /*background-image: linear-gradient(to right, yellow, red);*/
+    background-image: repeating-linear-gradient(to top left, tomato 20%, red 40%);
+}
+
+
+
+.box{
+    padding: .5rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); /*inset
+    da la impresion de que esta hundido por estar "dentro" de la box.*/
+
+}
+
+.text{
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+}
+
+
+.box-2{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
+    /* transform: rotate(45deg, 100px); */
+    /* El primer elemento es el eje x, el segundo el eje y */
+    /* transform: translate(100px, 100px); */
+    /* transform: skew(5deg); Sirven para "acostar los elementos" 
+    tambien se puede usar solo "skewX" para el eje X por ejemplo.*/
+    transform: rotate(2deg);
+}
+/* tambien con scale podemos indicar explicitamente cual eje queremos
+manipular en caso de eje Y seria con "scaleY()" */
+/* .box-2:hover{
+    transform: scale(1.2, 1.2);
+} */
+
+
+.box_3{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
+    /* transform: rotateX(20deg);*/ /* Se esta rotando "hacia atras" en el eje X 
+    asimismo pasara si le indicamos que lo haga en el eje Y*/ 
+
+}
+.transition{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
+    transition: .3s .2s;/* En ese caso, el segundo parametro funciona como delay que es 
+    la linea de abajo  */
+    /* transition-delay: .2s; */
+}
+/* Como aclaracion, las transiciones ocupan en las mayorias de las veces
+un hover para aplicar la transition */
+
+.transition:hover{
+    transform: scale(1.2, 1.2);
+    background-color: rgba(0, 0, 0, .1);
+}

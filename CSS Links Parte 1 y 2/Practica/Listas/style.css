@@ -1,0 +1,29 @@
+body{
+    background-color: #eee;
+}
+
+ul{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+    list-style-type: none;
+    padding-left: 0rem;
+}
+
+li{
+    border-bottom: 1px solid #ddd;
+    padding: 1.2rem;
+}
+
+/*
+Tipos que existen
+
+list-style-type:
+CIRCLE
+SQUARE
+UPPER-ROMAN
+LOWER
+LOWER-ALPHA
+
+*/
+
