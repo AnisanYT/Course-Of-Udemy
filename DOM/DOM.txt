@@ -1,0 +1,13 @@
+|| ¿QUE ES EL DOM? ||
+
+Es el HTML, el arbol de HTML una ves construido,
+representado en objetos.
+Cada uno de los componentes. 
+Tambien tiene una interfaz de programacion estandar,
+propiedades, metodos y eventos para poder acceder
+a los elementos HTML.
+
+RESUMEN
+
+Podemos cambiar, agregar o eliminar elementos
+dentro de nuestra web por medio de componentes.

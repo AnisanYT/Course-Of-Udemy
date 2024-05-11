@@ -1,0 +1,39 @@
+.flex{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap ; 
+    height: 200px; 
+    /* JUSTIFI CONTENT se refiere al contenido de izq a derecha 
+    ALIGN CONTENT de Arriba hacia abajo */
+
+}
+.red{
+    background-color: red;
+}
+/* Manipulacion del orden de los elementos */
+/* De acuerdo al orden de numeros de negativo al mayor se ordenaran los elementos */
+
+
+/* Flex grow permite que un elemento crezca en funcion a lo que pueda tomar. */
+/* Flex basis asigna un ancho inicial y luego se distribuye el resto del contenido en base al flex grow */
+.primero{
+    order: 0;
+    /* flex-grow: 1;
+    flex-basis: 20px; */
+    /* flex en este orden establece primero grow y despues basis */
+    flex: 1 120px;
+}
+.segundo{
+    order: 0;
+    flex-grow: 1;
+}
+
+.tercero{
+    flex-grow: 2;
+    order: 0;
+    /* align self permite manipular el elemento de acuerdo a su misma posicion en eje */
+    align-self: flex-start;
+}
+
+

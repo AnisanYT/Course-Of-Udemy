@@ -1,0 +1,35 @@
+Flexbox esta diseñado para gestionar los contenedores en una unica fila y una unica columna.
+
+justify-content: Esta propiedad controla la alineación de los elementos flexibles a lo largo del eje principal del contenedor flex. Tiene las siguientes propiedades:
+flex-start: Los elementos se alinean hacia el principio del contenedor.
+flex-end: Los elementos se alinean hacia el final del contenedor.
+center: Los elementos se alinean en el centro del contenedor.
+space-between: Los elementos se distribuyen de manera uniforme en el contenedor, con el primer elemento al principio y el último elemento al final.
+space-around: Los elementos se distribuyen de manera uniforme en el contenedor, con un espacio igual alrededor de cada elemento.
+space-evenly: Los elementos se distribuyen de manera uniforme en el contenedor, con un espacio igual entre ellos y alrededor de ellos.
+
+align-items: Esta propiedad controla la alineación de los elementos flexibles en el eje transversal del contenedor flex. Tiene las siguientes propiedades:
+flex-start: Los elementos se alinean hacia el principio del contenedor.
+flex-end: Los elementos se alinean hacia el final del contenedor.
+center: Los elementos se alinean en el centro del contenedor.
+baseline: Los elementos se alinean según su línea base.
+stretch: Los elementos se estiran para llenar el contenedor.
+
+align-self: Esta propiedad controla la alineación de un único elemento flexible dentro del contenedor flex. Tiene las mismas propiedades que align-items y sobrescribe cualquier valor establecido por esa propiedad para el elemento específico.
+
+flex-direction: Esta propiedad establece la dirección principal en la que los elementos flexibles son colocados dentro del contenedor flex. Tiene las siguientes propiedades:
+row: Los elementos se colocan en filas de izquierda a derecha.
+row-reverse: Los elementos se colocan en filas de derecha a izquierda.
+column: Los elementos se colocan en columnas de arriba hacia abajo.
+column-reverse: Los elementos se colocan en columnas de abajo hacia arriba.
+
+flex-wrap: Esta propiedad controla si los elementos flexibles dentro del contenedor pueden envolverse o no a múltiples líneas. Tiene las siguientes propiedades:
+nowrap: Los elementos flexibles se ajustan en una sola línea.
+wrap: Los elementos flexibles se pueden envolver en múltiples líneas si es necesario.
+wrap-reverse: Los elementos flexibles se envuelven en múltiples líneas en dirección opuesta.
+
+flex-grow: Esta propiedad especifica cuánto debe crecer un elemento flexible en relación con los demás elementos flexibles dentro del mismo contenedor cuando hay espacio adicional disponible.
+
+flex-shrink: Esta propiedad especifica cuánto debe encogerse un elemento flexible en relación con los demás elementos flexibles dentro del mismo contenedor cuando hay espacio insuficiente disponible.
+
+flex-basis: Esta propiedad establece el tamaño inicial del elemento flexible antes de que se distribuya el espacio adicional o se apliquen las reglas de flexión. 
