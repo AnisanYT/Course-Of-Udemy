@@ -1,0 +1,6 @@
+*.json text eol=lf
+* text=auto
+*.txt text eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
