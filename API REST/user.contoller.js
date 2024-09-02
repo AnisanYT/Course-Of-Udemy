@@ -1,18 +1,34 @@
+const userModule = require('./user')
+
 const User = {
-    get: (req, res) => {
-        res.status(200).send(req.params)
+    get: async (req, res) => {
+        const { id } = req.params
+        const user = await userModule.findOne({_id: id})
+        res.status(200).send(user)
     },
-    list: (req, res) => {
-        res.status(200).send('Hola chanchito!')
+    list: async (req, res) => {
+        const user = await (userModule.find())
+        res.status(200).send(user)
     },
-    create: (req, res) => {
-        res.status(201).send('Creando un chanchito!')
+    create: async (req, res) => {
+        const user = new userModule(req.body)
+        const savedUser = await user.save()
+        res.status(201).send(savedUser._id)
     },
-    update: (req, res) => {
-        res.status(204).send('Actualizando chanchito!')
+    update: async (req, res) => {
+        const { id } = req.params
+        const user = await userModule.findOne({ _id: id})
+        Object.assign(user, req.body)
+        await user.save()
+        res.sendStatus(204)
     },
-    destroy: (req, res) => {
-        res.status(204).send('Borrando al chanchoto!')
+    destroy: async (req, res) => {
+        const { id } = req.params
+        const user = await userModule.findOne({ _id : id})
+        if (user){
+            await userModule.findByIdAndDelete(id)
+        }
+        res.sendStatus(204)
     }
 }
 
